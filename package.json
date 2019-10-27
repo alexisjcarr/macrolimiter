@@ -1,6 +1,6 @@
 {
   "name": "macrolimiter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Module that allows for limiting calls for specific api keys",
   "main": "index.js",
   "scripts": {
