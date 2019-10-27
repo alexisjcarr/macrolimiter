@@ -16,12 +16,13 @@
 
 > An npm package that facilitates both the generation and validation of API keys, as well as the limiting of calls for specific API keys on key-protected routes.
 
-## Author
+## Contributors
 
-👤 **Alexis J. Carr**
-
-- Twitter: [@THEAlexisCarr](https://twitter.com/THEAlexisCarr)
-- Github: [@alexisjcarr](https://github.com/alexisjcarr)
+|                                                 [Alexis J. Carr](https://github.com/alexisjcarr)                                                  |                                          [Michael Hart](https://github.com/worksofhart)                                           |                                             [Chao Ji](https://github.com/cjgodfather)                                             |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://raw.githubusercontent.com/alexisjcarr/Web-UI-1/master/assets/img/alexis.png" width = "200" />](https://github.com/alexisjcarr) |     [<img src="https://avatars2.githubusercontent.com/u/48599443?s=460&v=4" width = "200" />](https://github.com/worksofhart)     |     [<img src="https://avatars3.githubusercontent.com/u/39098919?s=460&v=4" width = "200" />](https://github.com/cjgodfather)     |
+|                             [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/alexisjcarr)                              |                     [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/worksofhart)                      |                     [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/cjgodfather)                      |
+|           [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/alexis-j-carr)           | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/michael-hart-dev/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/chao-ji-113b594a/) |
 
 ### 🏠 [Homepage](https://github.com/alexisjcarr/macrolimiter)
 

@@ -1,7 +1,7 @@
 {
   "name": "macrolimiter",
-  "version": "0.0.1",
-  "description": "Module that allows for limiting calls for specific api keys",
+  "version": "0.0.2",
+  "description": "An npm package that facilitates both the generation and validation of API keys, as well as the limiting of calls for specific API keys on key-protected routes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
