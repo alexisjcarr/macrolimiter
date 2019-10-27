@@ -1,6 +1,8 @@
-const { generateAPIKey, validateKey, keyLimiter } = require('.')
+// const { generateAPIKey, validateKey, keyLimiter } = require('.')
 
 // console.log(generateAPIKey())
+
+const { generateAPIKey, validateKey, keyLimiter } = require('macrolimiter')
 
 let hashArr = [],
   keyArr
@@ -23,3 +25,5 @@ app.get('/', validateKey(hashArr), keyLimiter(2), (_req, res) => {
 })
 
 app.listen(8888, () => console.log(`\n=== I'm on port 8888 ===\n`))
+
+// console.log(generateAPIKey())

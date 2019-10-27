@@ -10,17 +10,25 @@
   "keywords": [
     "api",
     "key",
-    "throttling"
+    "throttling",
+    "async rate limiter",
+    "rate limiter",
+    "rate limiting",
+    "async",
+    "rate",
+    "limiting",
+    "limiter",
+    "throttle",
+    "throttling",
+    "throttler"
   ],
   "author": "Alexis J Carr",
   "license": "MIT",
-  "devDependencies": {
-    "prettier": "^1.18.2"
-  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "macrolimiter": "^1.0.0",
     "node-cron": "^2.0.3",
     "redis": "^2.8.0",
     "uuid-apikey": "^1.4.6"
