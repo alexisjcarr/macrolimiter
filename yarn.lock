@@ -240,6 +240,20 @@ ipaddr.js@1.9.0:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.0.tgz#37df74e430a0e47550fe54a2defe30d8acd95f65"
   integrity sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==
 
+macrolimiter@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/macrolimiter/-/macrolimiter-0.0.0.tgz#96d2d356dff5d343671f9b21c1b45cf5d5f59e6a"
+  integrity sha512-lHr+4ZsgVt2aXY+LzPbzb/QPoJwsCEl5WPhk+4rYaePV8rP4KE7WOFRfNF7B+oddxZyjFVhgpQtEPUcs29M52w==
+  dependencies:
+    bcryptjs "^2.4.3"
+    defaults "^1.0.3"
+    dotenv "^8.2.0"
+    express "^4.17.1"
+    macrolimiter "^1.0.0"
+    node-cron "^2.0.3"
+    redis "^2.8.0"
+    uuid-apikey "^1.4.6"
+
 macrolimiter@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/macrolimiter/-/macrolimiter-1.0.0.tgz#eb6479a296950af47950d5545ef58d35fe723058"
@@ -328,6 +342,11 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+prettier@^1.18.2:
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
+  integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
 
 proxy-addr@~2.0.5:
   version "2.0.5"

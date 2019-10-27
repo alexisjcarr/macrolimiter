@@ -9,7 +9,7 @@ exports.validateKey = function(KEY_OPTS) {
    */
 
   KEY_OPTS = defaults(KEY_OPTS, {
-    hashArr: null,
+    HASH_ARR: null,
     ERR_MSG: 'Valid key not provided. Access denied.'
   })
 
@@ -18,7 +18,7 @@ exports.validateKey = function(KEY_OPTS) {
 
     let validKey = null
 
-    const keyCandidates = HASH_ARR
+    const keyCandidates = KEY_OPTS.HASH_ARR
 
     /*=== checks validity of key ===*/
     if (key) {

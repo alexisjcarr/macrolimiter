@@ -12,8 +12,8 @@ exports.keyLimiter = function(CALL_LIMIT_OPTS) {
    */
 
   CALL_LIMIT_OPTS = defaults(CALL_LIMIT_OPTS, {
-    calls: 100,
-    time: '24h'
+    CALL_LIMIT: 100,
+    TIME: '24h'
   })
 
   return async (req, res, next) => {
@@ -22,13 +22,13 @@ exports.keyLimiter = function(CALL_LIMIT_OPTS) {
     const calls = await client.get(key)
 
     if (calls) {
-      if (calls <= CALL_LIMIT) {
+      if (calls <= CALL_LIMIT_OPTS.CALL_LIMIT) {
         const newCalls = Number(calls) + 1
         client.set(key, newCalls)
         next()
       } else {
         res.status(403).json({
-          message: `Key: ${key} has exceeded the call limit of ${CALL_LIMIT} calls`
+          message: `Key: ${key} has exceeded the call limit of ${CALL_LIMIT_OPTS.CALL_LIMIT} calls`
         })
       }
     } else {
