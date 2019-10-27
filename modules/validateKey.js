@@ -5,7 +5,7 @@ const defaults = require('defaults')
 exports.validateKey = function(KEY_OPTS) {
   /**
    * @param {array} HASH_ARR
-   * @param {string} ERR_MESSAGE
+   * @param {string} ERR_MSG
    */
 
   KEY_OPTS = defaults(KEY_OPTS, {

@@ -1,7 +1,7 @@
 const { generateAPIKey, validateKey, keyLimiter } = require('macrolimiter')
 
 /* 
-  Using the hashArr as a simulated db for demo purposes. It contains hashed api keys.
+  Using the hashArr as a simulated db for demo purposes. It will contain hashed api keys.
 */
 let hashArr = [],
   headersKey
@@ -12,7 +12,7 @@ let hashArr = [],
     key: 'ZC51K5Z-BY8MWFE-P88N4TJ-PQ4Q434', 
     hash: '$2a$10$V4pGVXNHGc0p.iRbcZDYn.Fy3ajZuwSrb.ZMFYa6c8EyYpXL7AN2O' 
   }
-  */
+*/
 const key_ = generateAPIKey()
 
 hashArr.push(key_.hash)

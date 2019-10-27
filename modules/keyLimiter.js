@@ -8,7 +8,7 @@ client.get = promisify(client.get)
 exports.keyLimiter = function(CALL_LIMIT_OPTS) {
   /**
    * @param {number} CALL_LIMIT
-   * @param {string} ERR_MESSAGE
+   * @param {string} TIME
    */
 
   CALL_LIMIT_OPTS = defaults(CALL_LIMIT_OPTS, {
