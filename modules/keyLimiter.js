@@ -1,14 +1,20 @@
 const client = require('../redis')
+const defaults = require('defaults')
 const { promisify } = require('util')
 
 client.get = promisify(client.get)
 
 /*=== keyLimiter ===*/
-exports.keyLimiter = function(CALL_LIMIT) {
+exports.keyLimiter = function(CALL_LIMIT_OPTS) {
   /**
    * @param {number} CALL_LIMIT
    * @param {string} ERR_MESSAGE
    */
+
+  CALL_LIMIT_OPTS = defaults(CALL_LIMIT_OPTS, {
+    calls: 100,
+    time: '24h'
+  })
 
   return async (req, res, next) => {
     const { key } = req
@@ -31,3 +37,5 @@ exports.keyLimiter = function(CALL_LIMIT) {
     }
   }
 }
+
+console.log(this.keyLimiter())

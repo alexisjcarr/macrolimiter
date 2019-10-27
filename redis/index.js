@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const redis = require('redis')
 
 /*=== creates and initializes redis instance that is heroku friendly ===*/

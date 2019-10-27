@@ -1,11 +1,18 @@
 const bcrypt = require('bcryptjs')
+const defaults = require('defaults')
 
 /*=== validateKey ===*/
-exports.validateKey = function(HASH_ARR, ERR_MESSAGE = 'lol') {
+exports.validateKey = function(KEY_OPTS) {
   /**
    * @param {array} HASH_ARR
    * @param {string} ERR_MESSAGE
    */
+
+  KEY_OPTS = defaults(KEY_OPTS, {
+    hashArr: null,
+    ERR_MSG: 'Valid key not provided. Access denied.'
+  })
+
   return async (req, res, next) => {
     const { key } = req.headers
 
@@ -35,7 +42,7 @@ exports.validateKey = function(HASH_ARR, ERR_MESSAGE = 'lol') {
       next()
     } else {
       res.status(403).json({
-        error: ERR_MESSAGE
+        error: KEY_OPTS.ERR_MSG
       })
     }
   }
