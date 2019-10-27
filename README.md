@@ -1,9 +1,9 @@
-<h1 align="center">Welcome to macrolimiter 👋</h1>
+<h1 align="center">macrolimiter</h1>
 <p>
   <a href="https://www.npmjs.com/package/macrolimiter" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/macrolimiter.svg">
   </a>
-  <a href="here" target="_blank">
+  <a href="https://github.com/alexisjcarr/macrolimiter" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
@@ -14,14 +14,18 @@
   </a>
 </p>
 
-> Module that allows for limiting calls for specific api keys
+> An npm package that facilitates both the generation and validation of API keys, as well as the limiting of calls for specific API keys on key-protected routes.
 
 ## Author
 
-👤 **Alexis J Carr**
+👤 **Alexis J. Carr**
 
 - Twitter: [@THEAlexisCarr](https://twitter.com/THEAlexisCarr)
 - Github: [@alexisjcarr](https://github.com/alexisjcarr)
+
+### 🏠 [Homepage](https://github.com/alexisjcarr/macrolimiter)
+
+### ✨ [Demo](https://github.com/alexisjcarr/macrolimiter/blob/master/examples/index.js)
 
 ## Install
 
@@ -29,13 +33,9 @@
 npm install
 ```
 
-## Run tests
+## 🤝 Contributing
 
-```sh
-npm run test
-```
-
-## Contributing
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/alexisjcarr/macrolimiter/issues).
 
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
