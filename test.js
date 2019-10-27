@@ -1,4 +1,4 @@
-const { generateAPIKey, validateKey } = require('.')
+const { generateAPIKey, validateKey, keyLimiter } = require('.')
 
 // console.log(generateAPIKey())
 
@@ -11,15 +11,15 @@ for (let i = 0; i < 1; i++) {
   keyArr = key_.key
 }
 
-console.log(keyArr)
-console.log(hashArr)
+console.log(`\n${keyArr}\n`)
+console.log(`\n${hashArr}\n`)
 
 const express = require('express')
 
 const app = express()
 
-app.get('/', validateKey(hashArr), (req, res) => {
+app.get('/', validateKey(hashArr), keyLimiter(2), (_req, res) => {
   res.send('hi')
 })
 
-app.listen(8888, () => console.log("I'm on"))
+app.listen(8888, () => console.log(`\n=== I'm on port 8888 ===\n`))
