@@ -1,6 +1,6 @@
 {
   "name": "macrolimiter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An npm package that facilitates both the generation and validation of API keys, as well as the limiting of calls for specific API keys on key-protected routes.",
   "main": "index.js",
   "scripts": {
