@@ -46,7 +46,7 @@ If you're on Windows, first go to the releases page of the Redis for Windows rep
 
 #### Example
 
-```
+```javascript
 const { generateAPIKey, validateKey, keyLimiter } = require('macrolimiter')
 
 /*
