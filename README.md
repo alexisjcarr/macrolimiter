@@ -56,7 +56,9 @@ let hashArr = [],
   headersKey // key that will be added to headers
 
 /*
-  generateAPIKey() generates random api key object with the key and a hashed key for secure storage in a db.
+  generateAPIKey() generates random api key object with the key and a hashed key 
+  for secure storage in a db.
+  
   example:
   {
     key: 'ZC51K5Z-BY8MWFE-P88N4TJ-PQ4Q434',
@@ -77,12 +79,14 @@ const app = express()
 /*
   User will send key (here stored as key_) on headers.
 
-  validateKey() will check the key on headers against the passed in array of hashed keys. O(n) complexity rn, so fair.
+  validateKey() will check the key on headers against the passed in array of hashed 
+  keys. O(n) complexity rn, so fair.
 
-  For the keyLimiter(), pass in the max number of times you want the user to hit your server before being blocked.
+  For the keyLimiter(), pass in the max number of times you want the user to hit 
+  your server before being blocked.
 
-  COMING SOON: Ability to implement calls/time period limits (i.e. 1000 calls/day would be keyLimiter({ CALL_LIMIT: 1000, TIME: '24hr' })).
-  it's in place currently with a cron job, but may switch to clock process for more control over window (sliding vs. fixed) and for hack over Heroku free tier sleeping
+  COMING SOON: Ability to implement calls/time period limits (i.e. 1000 calls/day 
+  would be keyLimiter({ CALL_LIMIT: 1000, TIME: '24hr' })).
 */
 
 app.get(
@@ -137,6 +141,7 @@ Remember that this project is licensed under the MIT license, and by submitting 
 These contribution guidelines have been adapted from [this good-Contributing.md-template](https://gist.github.com/PurpleBooth/b24679402957c63ec426).
 
 ## License
+
 [MIT](LICENSE)
 
 ## Show your support
