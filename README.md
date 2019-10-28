@@ -137,7 +137,7 @@ Remember that this project is licensed under the MIT license, and by submitting 
 These contribution guidelines have been adapted from [this good-Contributing.md-template](https://gist.github.com/PurpleBooth/b24679402957c63ec426).
 
 ## License
-[MIT]()
+[MIT](LICENSE)
 
 ## Show your support
 
